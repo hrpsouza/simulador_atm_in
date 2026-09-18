@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador ATM</title>
     <!-- Ligando o arquivo CSS externo -->
-    <link rel="stylesheet" href="estilos.css">
-</HEAD>
-<BODY>
-<div class="container" style="color: greenyellow">
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+<div class="container">
   <h1 class="page-title">
     (SIMULADOR DE) CAIXA ELETRÔNICO <br>
    <!-- APERTE QUALQUER TECLA PARA INICIAR -->
@@ -16,52 +16,48 @@
   </h1>
   <div class="inst inicial"
   EM QUE PODEMOS AJUDAR?<br><br>
-se FOR TAREFA QUE retira DINHEIRO DA MÁQUINA PARA CLIENTE, então DIGITE AS TECLAS "0" e "ENTER"<br><br>
-se FOR TAREFA QUE coloca ENVELOPE NA MÁQUINA, então DIGITE AS TECLAS "1" e "ENTER"<br><br>
-se FOR TAREFA DIFERENTE DAS ANTERIORES, então DIGITE AS TECLAS "2" e "ENTER"<br><br>
+se FOR TAREFA QUE retira DINHEIRO DA MÁQUINA PARA CLIENTE, então DIGITE A TECLA "0"<br><br>
+se FOR TAREFA QUE coloca ENVELOPE NA MÁQUINA, então DIGITE A TECLA "1"<br><br>
+se FOR TAREFA DIFERENTE DAS ANTERIORES, então DIGITE A TECLA "2"<br><br>
   </div>
 </br>
-POR FAVOR, DIGITE ENTÃO "0", "1" OU "2" E DEPOIS "ENTER":
+POR FAVOR, DIGITE ENTÃO "0", "1" OU "2":
 
 <form id="1Form" action="retiradacomcartaoinicial/retiradacomcartaoinicial.html" method="post">
-<!-- This is a comment -->
-    <!-- <label for="name">Name:</label> -->
-    <!-- <input type="text" id="name" name="name" required> -->
-    <button type="submit" id="submitBtn1">0</button>
+	<!-- This is a comment -->
+    	<button type="submit" class="large-button" id="submitBtn1">0</button>
 </form>
 
 <form id="2Form" action="manutencao/manut.html" method="post">
-<!-- This is a comment -->
-    <!-- <label for="name">Name:</label> -->
-    <!-- <input type="text" id="name" name="name" required> -->
-    <button type="submit" id="submitBtn2">1</button>
+	<!-- This is a comment -->
+    	<button type="submit" class="large-button" id="submitBtn2">1</button>
 </form>
 
 <form id="3Form" action="manutencao/manut.html" method="post">
-<!-- This is a comment -->
-    <!-- <label for="name">Name:</label> -->
-    <!-- <input type="text" id="name" name="name" required> -->
-    <button type="submit" id="submitBtn3">2</button>
+	<!-- This is a comment -->
+    	<button type="submit" class="large-button" id="submitBtn3">2</button>
 </form>
 
 <script>
 document.addEventListener('keydown', function(event) {
     // Check if the pressed key is a number (0–9) without Shift/Alt/Ctrl
     if (/^[0]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
-        event.preventDefault(); // Prevent typing the number into inputs
-        document.getElementById('submitBtn1').click(); // Trigger button click
+	// Prevent typing the number into inputs
+        event.preventDefault(); 
+	// Trigger button click
+        document.getElementById('submitBtn1').click(); 
     }
     if (/^[1]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
-        event.preventDefault(); // Prevent typing the number into inputs
-        document.getElementById('submitBtn2').click(); // Trigger button click
+        event.preventDefault(); 
+        document.getElementById('submitBtn2').click();
     }
     if (/^[2]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
-        event.preventDefault(); // Prevent typing the number into inputs
-        document.getElementById('submitBtn3').click(); // Trigger button click
+        event.preventDefault();
+        document.getElementById('submitBtn3').click(); 
     }
 });
 </script>
 
 </div>
-<BODY>
-</HTML>
+<body>
+</html>
