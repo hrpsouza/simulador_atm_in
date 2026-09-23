@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+.container {
+  font-family: 'Bungee';
+  color: greenyellow;
+  background-color: #000000;
+}
+
+.large-button {
+width: 200px;   /* Set a specific width */
+height: 60px;   /* Set a specific height */
+font-size: 16px; /* Make text larger */
+}
+
+.large-field {
+width: 200px;   /* Set a specific width */
+height: 60px;   /* Set a specific height */
+font-size: 16px; /* Make text larger */
+}
+
+.h1 {
+  
+}
+
+.inst inicial{
+  
+}

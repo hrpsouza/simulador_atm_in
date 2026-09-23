@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Simulador ATM</title>
+    	<!-- Ligando o arquivo CSS externo -->
+    	<link rel="stylesheet" href="digitarvaloraretirarstyle.css">
+
+<script>
+// Run when DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Get the input element by its ID
+    const nameInput = document.getElementById("valorADigitar");
+
+    // Check if the element exists and is focusable
+    if (nameInput && typeof nameInput.focus === "function") {
+    // if ((nameInput && typeof nameInput.focus) == "function") {
+        // Delay slightly to ensure rendering is complete
+        setTimeout(() => {
+           nameInput.focus();
+           }, 50);
+	//setTimeout((nameInput.focus(), 50));
+    }
+});
+</script>
+
+</head>
+<body>
+<div class="container">
+
+  <h1 class="page-title">
+PRECISAMOS QUE CLIENTE DIGITE VALOR A RETIRAR <br><br>
+VALOR máximo DE RETIRADA É DE R$2000,00 (DOIS MIL REAIS)<br> VALOR mínimo DE RETIRADA É DE R$4,00 (QUATRO REAIS)<br><br>
+POR FAVOR DIGITAR O VALOR DA RETIRADA e depois "enter" <br><br>
+OU ENTÃO DIGITE ZERO e depois "enter" PARA CANCELAR A OPERAÇÃO
+:<br>
+  </h1>
+    
+    <!-- Input field -->
+<form name="loginBox">
+    <label for="valorADigitar"></label>
+    <input type="number" class="large-field" id="valorADigitar" placeholder="Digite o valor aqui...">
+    
+    <!-- Button with onclick sending the value -->
+    <button id="valorARetirar" hidden class="large-button" ></button>
+
+<!-- button onclick="informarValorARetirar(document.getElementById('valorARetirar').value)"> -->
+
+</form>
+
+<script>
+//setTimeout(() => {
+//window.location.href = "../../index.html";
+//}, 10000); // 10 seconds delay
+</script>
+
+<script>
+        // Function to receive the value and process it
+        function informarValorARetirar(value) {
+            alert("Cliente digitou: " + value);
+	    event.preventDefault();
+	    // window.location.href = window.location.href;
+        }
+</script>
+
+<script>
+        document.getElementById("valorARetirar").addEventListener("click", function () {
+            const name = document.getElementById("valorADigitar").value.trim().replace(/[,\.\+\-\*\/]/g, "");
+	    // name = name.replace(/[,\.\+\-\*\/]/g, "");
+	    
+	    // Validate input
+            if (!name) {
+                alert("Please enter a name before proceeding.");
+                return;
+            }
+
+	    if ((name<4 || name>2000)) {
+                alert("Please enter a valid value before proceeding.");
+                return;
+            }	    
+
+	    // alert("Cliente agora digitou: " + name);
+
+            // Store value in sessionStorage
+            sessionStorage.setItem("username", name);
+
+            // Redirect to second page
+	    event.preventDefault();
+	    //window.location.href = "digitarsenha_sb/digitarsenha.html";
+            //window.location.href = "digitarsenha_sb/Page_2_Receive_Value_Example.html";
+	    window.location.href = "digitarsenha/digitarsenha.html";
+        });
+</script>
+
+</body>
+</html>
+
