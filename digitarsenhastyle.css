@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+.container {
+  font-family: 'Bungee';
+  color: greenyellow;
+  background-color: #000000;
+  font-size: 14px;
+}
+
+#test1, #test2 { 
+  display: inline; 
+}
+
+#test3, #test4 { 
+  display: inline; 
+}
+
+#test5, #test6 { 
+  display: inline; 
+}
+
+#test7, #test8 { 
+  display: inline; 
+}
+
+#test9, #test10 { 
+  display: inline; 
+}
+
+#intoWordsValue{
+  color: red;
+}
+
+.large-button {
+width: 200px;   /* Set a specific width */
+height: 60px;   /* Set a specific height */
+font-size: 16px; /* Make text larger */
+}
+
+.large-field {
+width: 200px;   /* Set a specific width */
+height: 60px;   /* Set a specific height */
+font-size: 16px; /* Make text larger */
+}
+
+#firstButton {
+    background-color: #4CAF50; /* Green background */
+    color: white;              /* White text */
+    padding: 10px 20px;         /* Space inside button */
+    border: none;               /* Remove border */
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;            /* Pointer on hover */
+}

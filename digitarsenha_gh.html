@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador ATM</title>
+    <!-- Ligando o arquivo CSS externo -->
+    <link rel="stylesheet" href="digitarsenhastyle.css">
+</head>
+
+<body>
+<div class="container">
+
+<script>
+window.addEventListener('load', () => {
+document.getElementById('firstButton').focus();
+});
+</script>
+
+<p id="displayName"></p>
+<p id="intoWordsValue"> <p>
+SE CLIENTE NÃO QUISER SACAR ESSE VALOR BASTA ESPERAR SEM DIGITAR <br>
+QUE O SISTEMA RETORNA À TELA DO INÍCIO DENTRO DE 2 MINUTOS<br><br>
+
+<script>
+        // Retrieve value from sessionStorage
+        let storedName = sessionStorage.getItem("username").toString();
+	//alert("Outra página enviou: " + storedName);
+	
+        if (storedName) {
+            document.getElementById("displayName").textContent = `Tudo Bem, Cliente pretende sacar R$ ${storedName},00 `;
+        } else {
+            document.getElementById("displayName").textContent = "No name found in session.";
+        }
+</script>
+
+<script src= "digitarsenha.js">
+</script>
+
+<script>
+//alert("reaching here in the HTML yet");
+//alert("the value is: " + storedName);
+//alert("the value is: " + typeof storedName);
+
+const storedNameArray = stringToCharArray(storedName);
+// alert("1 caractere é: " + storedNameArray[0]);
+alertEachString(storedNameArray);
+//useFirstTwo(storedNameArray);
+
+</script>
+
+APRESENTANDO OPÇÕES <br>
+(==> ==> SEM ALTERAÇÃO DESDE 19 SET 2026):<br>
+
+O SISTEMA não PODERÁ MOSTRAR DIRETAMENTE OS 10 NÚMEROS DO TECLADO, DEVIDO A RAZÕES DE SEGURANÇA<br>
+
+O SISTEMA MOSTRARÁ 10 NÚMEROS, MAS EM 5 PARES, DE MODO QUE "CURIOSOS" E "HACKERS" NÃO VEJAM A SENHA<br>
+AS 5 TECLAS USADAS SERÃO: "/" "*" "-" "+" "." <br><br>
+
+==> ==> APERTE A TECLA "ENTER" PARA CONTINUAR (E VER ESSES PARES DE NÚMEROS PARA DIGITAR A SENHA)<br>
+<button id="firstButton" onClick="goToPage()">ENTER </button>
+</div>
+<script>
+    // Function to navigate to another page
+    function goToPage() {
+        // You can use a relative or absolute URL
+        window.location.href = "digitar1onumsenha.html";
+    }
+</script>
+
+<script>
+setTimeout(() => {
+window.location.href = "../../../index.html";
+}, 60000); // 60 seconds delay
+</script>
+
+</body>

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Simulador ATM</title>
+    	<!-- Ligando o arquivo CSS externo -->
+    	<link rel="stylesheet" href="digitarsenhastyle.css">
+	<meta charset="UTF-8">
+	
+</head>
+
+<body>
+
+<div class="container">
+<p class="page-subtitle">      
+CLIENTE SABE OS 4 NÚMEROS DA SENHA, CERTO? <br>
+então CONTINUANDO NA TAREFA <br>
+APRESENTANDO OPÇÕES<br>
+DIGITAÇÃO DE TECLA QUE NÃO CONFERE COM A SENHA PODERÁ FAZER SISTEMA VOLTAR AO INÍCIO<br>
+(==> ==> SEM ALTERAÇÃO DESDE 31 AGO 2026):
+</p>
+<br><br>
+
+<p id="test1">==>DIGITE A TECLA / SE PRIMEIRO NÚMERO DA SENHA FOR </p>
+<p id="test2">OU SE FOR</p>
+<form id="/Form" onSubmit="JavaScript:handleClick1()" method="post">
+	<button type="submit" class="large-button" id="submitBtn1">/</button>
+</form>
+
+<br>
+<p id="test3">==>DIGITE A TECLA * SE PRIMEIRO NÚMERO DA SENHA FOR</p>
+<p id="test4">OU SE FOR</p>
+<form id="*Form" onSubmit="JavaScript:handleClick2()" method="post">
+	<button type="submit" class="large-button" id="submitBtn2">*</button>
+</form>
+<br>
+
+<p id="test5">==>DIGITE A TECLA _ SE PRIMEIRO NÚMERO DA SENHA FOR</p>
+<p id="test6">OU SE FOR</p>
+<form id="-Form" onSubmit="JavaScript:handleClick3()" method="post">
+	<button type="submit" class="large-button" id="submitBtn3">_</button>
+</form>
+<br>
+
+<p id="test7">==>DIGITE A TECLA + SE PRIMEIRO NÚMERO DA SENHA FOR</p>
+<p id="test8">OU SE FOR</p>
+<form id="+Form" onSubmit="JavaScript:handleClick4()" method="post">
+	<button type="submit" class="large-button" id="submitBtn4">+</button>
+</form>
+<br>
+
+<p id="test9">==>DIGITE A TECLA ° SE PRIMEIRO NÚMERO DA SENHA FOR</p>
+<p id="test10">OU SE FOR</p>
+<form id=".Form" onSubmit="JavaScript:handleClick5()" method="post">
+	<button type="submit" class="large-button" id="submitBtn5">°</button>
+</form>
+
+<script>
+document.addEventListener('keydown', function(event) {
+    // Check if the pressed key is a number (0–9) without Shift/Alt/Ctrl
+	if (/^[/]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
+        // Prevent typing the number into inputs
+	event.preventDefault(); 
+        // Trigger button click
+	document.getElementById('submitBtn1').click(); 
+    	}
+
+    	if (/^[*]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
+        event.preventDefault(); 
+        document.getElementById('submitBtn2').click(); 
+    	}    
+
+    	if (/^[-]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
+        event.preventDefault(); 
+        document.getElementById('submitBtn3').click(); 
+    	}
+
+    	if (/^[+]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
+        event.preventDefault(); 
+        document.getElementById('submitBtn4').click(); 
+    	}
+
+    	if (/^[.]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
+        event.preventDefault(); 
+        document.getElementById('submitBtn5').click(); 
+    	}
+});
+</script>
+
+<script src="digitarsenha.js">
+</script>
+
+<script src="digitar1onumsenha.js">
+</script>
+
+<script>
+function handleClick1(){
+receivingPairKey1();
+}
+</script>
+
+<script>
+function handleClick2(){
+receivingPairKey2();
+}
+</script>
+
+<script>
+function handleClick3(){
+receivingPairKey3();
+}
+</script>
+
+<script>
+function handleClick4(){
+receivingPairKey4();
+}
+</script>
+
+<script>
+function handleClick5(){
+receivingPairKey5();
+}
+</script>
+
+<script>
+updateParagraph();
+</script>
+
+<script>
+setTimeout(() => {
+window.location.href = "../../../index.html";
+}, 60000); // 60 seconds delay
+</script>
+
+</div>
+</body>
+</html>
