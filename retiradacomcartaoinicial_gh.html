@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador ATM</title>
+    <!-- Ligando o arquivo CSS externo -->
+    <link rel="stylesheet" href="retiradacomcartaoinicialstyle.css">
+</head>
+<body>
+<div class="container">
+<h1 class="page-title">
+CLIENTE ESCOLHEU TAREFA DE retirar DINHEIRO com USO DE CARTÃO. PEDIMOS ENTÃO PARA CONSIDERAR ESSAS INSTRUÇÕES: <br>
+
+</h1>
+
+<div class="retirada inicial com cartao">
+VALOR máximo DE RETIRADA É DE R$2000,00 (DOIS MIL REAIS)<br> VALOR mínimo DE RETIRADA É DE R$4,00 (QUATRO REAIS)<br><br>
+POR FAVOR, DIGITE 1 e depois O VALOR QUE PRECISA RETIRAR NA CAIXA DE DIÁLOGO QUE VAI SURGIR <br><br>
+OU ENTÃO DIGITE ZERO PARA CANCELAR A OPERAÇÃO
+
+</div>
+
+<form id="1Form" action="digitarvaloraretirar/digitarvaloraretirar.html" method="post">
+	<button type="submit" class="large-button" id="submitBtn1">DIGITE 1 e depois QUANTO QUE PRECISA RETIRAR</button>
+</form>
+
+<form id="0Form" action="../index.html" method="post">
+	<button type="submit" class="large-button" id="submitBtn2">DIGITE 0 PARA CANCELAR A TAREFA</button>
+</form>
+
+<script>
+// Returns to the start after a few seconds
+//setTimeout(() => {
+//window.location.href = "../index.html";
+//}, 20000); // 20 seconds delay
+</script>
+
+<script>
+document.addEventListener('keydown', function(event) {
+    // Check if the pressed key is a number (0–9) without Shift/Alt/Ctrl
+	if (/^[1]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
+        // Prevent typing the number into inputs
+	event.preventDefault(); 
+        // Trigger button click
+	document.getElementById('submitBtn1').click(); 
+    	}
+
+    	if (/^[0]$/.test(event.key) && !event.ctrlKey && !event.altKey && !event.metaKey) {
+        event.preventDefault(); 
+        document.getElementById('submitBtn2').click(); 
+    	}    
+
+});
+
+</script>
+
+</div>
+</body>
+</html>
