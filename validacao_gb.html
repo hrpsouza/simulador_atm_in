@@ -1,0 +1,93 @@
+<html lang="pt-BR">
+<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Simulador ATM</title>
+    	<!-- Ligando o arquivo CSS externo -->
+    	<link rel="stylesheet" href="validacaostyle.css">
+
+<script>
+// Run when DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Get the input element by its ID
+    const nameInput = document.getElementById("CPFADigitar");
+
+    // Check if the element exists and is focusable
+    if (nameInput && typeof nameInput.focus === "function") {
+    // if ((nameInput && typeof nameInput.focus) == "function") {
+        // Delay slightly to ensure rendering is complete
+        setTimeout(() => {
+           nameInput.focus();
+           }, 50);
+	//setTimeout((nameInput.focus(), 50));
+    }
+});
+</script>
+
+</head>
+<body>
+
+<div class="container">
+
+<script src= "validacao.js">
+</script>
+
+
+<h1 class="page-title">
+CLIENTE PRECISA DIGITAR O CPF NESSE CAMPO ABAIXO <br>
+E DEPOIS DIGITAR A TECLA "ENTER" <br>
+NOTA: VÍRGULAS E SEMELHANTES SERÃO IGNORADOS <br>
+
+</h1>
+<p id="NotCPFValidation"> </p>
+<p id="OkCPFValidation"> </p>
+<p id="NextPage"> <p>
+
+<form name="loginBox">
+    <label for="CPFADigitar"></label>
+    <input type="number" class="large-field" id="CPFADigitar" placeholder="Digite o valor aqui...">
+    
+    <!-- Button with onclick sending the value -->
+    <button id="CPFAValidar" hidden class="large-button" ></button>
+
+<!-- button onclick="informarCPFAValidar(document.getElementById('CPFAValidar').value)"> -->
+
+</form>
+
+</div>
+
+<script>
+        document.getElementById("CPFAValidar").addEventListener("click", function () {
+            const num = document.getElementById("CPFADigitar").value.trim().replace(/[,\.\+\-\*\/]/g, "");
+	
+    if ((num.length == 11)
+        & ([
+        '00000000000',
+        '11111111111',
+        '22222222222',
+        '33333333333',
+        '44444444444',
+        '55555555555',
+        '66666666666',
+        '77777777777',
+        '88888888888',
+        '99999999999',
+        ].indexOf(num) == -1)){
+        TestaCPF(num);
+        }else{
+        displayInvalidCPF("CPF DIGITADO INCORRETO", "PÁGINA REINICIARÁ EM ALGUNS SEGUNDOS", (" "));     
+        reloadThisPage();
+        }
+        
+        });
+</script>
+
+<script>
+setTimeout(() => {
+window.location.href = "https://hrpsouza.github.io/simulador_atm_in/";
+}, 60000); // 60 seconds delay
+</script>
+
+</body>
+</html>
