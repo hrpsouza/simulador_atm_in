@@ -116,14 +116,9 @@ if (
 (kp110.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp120.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-//alert(("tecla = ", kp10) + " foi a tecla digitada pelo Cliente.\n"
-//+("1valor = ", (kp110.replace(/\D/g,''))) + " foi 1 dos valores e \n" 
-//+("Outrovalor = ", (kp120.replace(/\D/g,''))) + " foi o outro valor.\n"
-//+ ("Cliente acertou o 3o num da senha."));
-window.location.href = "digitar4onumsenha.html";
+window.location.href = "digitar4onumsenha_gh.html";
 }else{
-//alert("Cliente não acertou o 3o num da senha.");
-window.location.href = "../../../index.html";
+window.location.href = "naoconferesenha_gh.html";
 }
 
 }
@@ -149,14 +144,9 @@ if (
 (kp210.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp220.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-//alert(("tecla = ", kp20) + " foi a tecla digitada pelo Cliente.\n"
-//+("1valor = ", (kp210.replace(/\D/g,''))) + " foi 1 dos valores e \n" 
-//+("Outrovalor = ", (kp220.replace(/\D/g,''))) + " foi o outro valor.\n"
-//+ ("Cliente acertou o 3o num da senha."));
-window.location.href = "digitar4onumsenha.html";
+window.location.href = "digitar4onumsenha_gh.html";
 }else{
-//alert("Cliente não acertou o 3o num da senha.");
-window.location.href = "../../../index.html";
+window.location.href = "naoconferesenha_gh.html";
 }
 
 }
@@ -182,14 +172,9 @@ if (
 (kp310.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp320.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-//alert(("tecla = ", kp30) + " foi a tecla digitada pelo Cliente.\n"
-//+("1valor = ", (kp310.replace(/\D/g,''))) + " foi 1 dos valores e \n" 
-//+("Outrovalor = ", (kp320.replace(/\D/g,''))) + " foi o outro valor.\n"
-//+ ("Cliente acertou o 3o num da senha."));
-window.location.href = "digitar4onumsenha.html";
+window.location.href = "digitar4onumsenha_gh.html";
 }else{
-//alert("Cliente não acertou o 3o num da senha.");
-window.location.href = "../../../index.html";
+window.location.href = "naoconferesenha_gh.html";
 }
 
 }
@@ -215,14 +200,9 @@ if (
 (kp410.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp420.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-//alert(("tecla = ", kp40) + " foi a tecla digitada pelo Cliente.\n"
-//+("1valor = ", (kp410.replace(/\D/g,''))) + " foi 1 dos valores e \n" 
-//+("Outrovalor = ", (kp420.replace(/\D/g,''))) + " foi o outro valor.\n"
-//+ ("Cliente acertou o 3o num da senha."));
-window.location.href = "digitar4onumsenha.html";
+window.location.href = "digitar4onumsenha_gh.html";
 }else{
-//alert("Cliente não acertou o 3o num da senha.");
-window.location.href = "../../../index.html";
+window.location.href = "naoconferesenha_gh.html";
 }
 
 }
@@ -248,14 +228,9 @@ if (
 (kp510.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp520.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-//alert(("tecla = ", kp50) + " foi a tecla digitada pelo Cliente.\n"
-//+("1valor = ", (kp510.replace(/\D/g,''))) + " foi 1 dos valores e \n" 
-//+("Outrovalor = ", (kp520.replace(/\D/g,''))) + " foi o outro valor.\n"
-//+ ("Cliente acertou o 3o num da senha."));
-window.location.href = "digitar4onumsenha.html";
+window.location.href = "digitar4onumsenha_gh.html";
 }else{
-//alert("Cliente não acertou o 3o num da senha.");
-window.location.href = "../../../index.html";
+window.location.href = "naoconferesenha_gh.html";
 }
 
 }

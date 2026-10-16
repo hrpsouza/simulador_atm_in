@@ -57,7 +57,6 @@ function displayValidCPF(forToShow1, forToShow2, forToShow3) {
         const outputDiv1 = document.getElementById("OkCPFValidation");
         const outputDiv2 = document.getElementById("NextPage");
         const outputDiv3 = document.getElementById("NotCPFValidation");
-        //alert("valor a mostrar " + value1 + " " + value2);
         event.preventDefault();
 
         if ((!outputDiv1)||(!outputDiv2)) {
@@ -102,7 +101,7 @@ function displayInvalidCPF(forToShow1, forToShow2, forToShow3) {
 function reloadThisPage(){
 // Returns to the start after a few seconds
 setTimeout(() => {
-//window.location.href = "../index.html";
+//window.location.href = "https://hrpsouza.github.io/simulador_atm_in/";
 location.reload ();
 }, 10000); // 10 seconds delay
 }
@@ -110,7 +109,7 @@ location.reload ();
 function returnPage(){
 // Returns to the start after a few seconds
 setTimeout(() => {
-window.location.href = "../index.html";
+window.location.href = "https://hrpsouza.github.io/simulador_atm_in/";
 //location.reload ();
 }, 10000); // 10 seconds delay
 }
@@ -118,7 +117,7 @@ window.location.href = "../index.html";
 function followPage(){
 // Goes to the next page
 setTimeout(() => {
-window.location.href = "retiradacomcartaoinicial/retiradacomcartaoinicial.html";
+window.location.href = "retiradacomcartaoinicial_gh.html";
 //location.reload ();
 }, 5000); // 5 seconds delay
 }

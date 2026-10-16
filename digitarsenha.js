@@ -156,15 +156,12 @@ let tOutput;
 switch (tInput) {
   case "0":
     tOutput = " ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "1":
     tOutput = "hum mil e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "2":
     tOutput = "dois mil e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   default:
     // code block
@@ -174,43 +171,33 @@ let hOutput;
 switch (hInput) {
   case "0":
     hOutput = " ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "1":
     hOutput = "cento e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "2":
     hOutput = "duzentos e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "3":
     hOutput = "trezentos e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "4":
     hOutput = "quatrocentos e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "5":
     hOutput = "quinhentos e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "6":
     hOutput = "seissentos e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "7":
     hOutput = "setecentos e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "8":
     hOutput = "oitocentos e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   case "9":
     hOutput = "novecentos e ";
-    //alert("Valor por extenso: " + hOutput + " reais");
     break;
   default:
     // code block
@@ -220,43 +207,33 @@ let dOutput;
 switch (dInput) {
   case "0":
     dOutput = " ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "1":
     dOutput = " dez";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "2":
     dOutput = "vinte e ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "3":
     dOutput = "trinta e ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "4":
     dOutput = "quarenta e ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "5":
     dOutput = "cinquenta e ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "6":
     dOutput = "sessenta e ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "7":
     dOutput = "setenta e ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "8":
     dOutput = "oitenta e ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   case "9":
     dOutput = "noventa e ";
-    //alert("Valor por extenso: " + dOutput + " reais");
     break;
   default:
     // code block
@@ -266,43 +243,33 @@ let aOutput;
 switch(aInput) {
   case "0":
     aOutput = " ";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "1":
     aOutput = "um";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "2":
     aOutput = "dois";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "3":
     aOutput = "três";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "4":
     aOutput = "quatro";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "5":
     aOutput = "cinco";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "6":
     aOutput = "seis";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "7":
     aOutput = "sete";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "8":
     aOutput = "oito";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   case "9":
     aOutput = "nove";
-    //alert("Valor por extenso: " + aOutput + " reais");
     break;
   default:
     // code block
@@ -360,7 +327,6 @@ if (daOutput.trim() == "dezcinco"){
 let thdiOutput;
 thdiOutput = tOutput + hOutput + daOutput  + " reais";
 
-// alert("Valor por extenso: " + thdiOutput + " reais");
 displayValue(thdiOutput);
 }
 

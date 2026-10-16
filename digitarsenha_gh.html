@@ -25,7 +25,6 @@ QUE O SISTEMA RETORNA À TELA DO INÍCIO DENTRO DE 2 MINUTOS<br><br>
 <script>
         // Retrieve value from sessionStorage
         let storedName = sessionStorage.getItem("username").toString();
-	//alert("Outra página enviou: " + storedName);
 	
         if (storedName) {
             document.getElementById("displayName").textContent = `Tudo Bem, Cliente pretende sacar R$ ${storedName},00 `;
@@ -38,15 +37,8 @@ QUE O SISTEMA RETORNA À TELA DO INÍCIO DENTRO DE 2 MINUTOS<br><br>
 </script>
 
 <script>
-//alert("reaching here in the HTML yet");
-//alert("the value is: " + storedName);
-//alert("the value is: " + typeof storedName);
-
 const storedNameArray = stringToCharArray(storedName);
-// alert("1 caractere é: " + storedNameArray[0]);
 alertEachString(storedNameArray);
-//useFirstTwo(storedNameArray);
-
 </script>
 
 APRESENTANDO OPÇÕES <br>
@@ -64,7 +56,7 @@ AS 5 TECLAS USADAS SERÃO: "/" "*" "-" "+" "." <br><br>
     // Function to navigate to another page
     function goToPage() {
         // You can use a relative or absolute URL
-        window.location.href = "digitar1onumsenha.html";
+        window.location.href = "digitar1onumsenha_gh.html";
     }
 </script>
 
