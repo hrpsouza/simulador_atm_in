@@ -116,9 +116,9 @@ if (
 (kp110.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp120.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-window.location.href = "digitar4onumsenha_gh.html";
+window.location.href = "digitar4onumsenha_gh";
 }else{
-window.location.href = "naoconferesenha_gh.html";
+window.location.href = "naoconferesenha_gh";
 }
 
 }
@@ -144,9 +144,9 @@ if (
 (kp210.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp220.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-window.location.href = "digitar4onumsenha_gh.html";
+window.location.href = "digitar4onumsenha_gh";
 }else{
-window.location.href = "naoconferesenha_gh.html";
+window.location.href = "naoconferesenha_gh";
 }
 
 }
@@ -172,9 +172,9 @@ if (
 (kp310.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp320.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-window.location.href = "digitar4onumsenha_gh.html";
+window.location.href = "digitar4onumsenha_gh";
 }else{
-window.location.href = "naoconferesenha_gh.html";
+window.location.href = "naoconferesenha_gh";
 }
 
 }
@@ -200,9 +200,9 @@ if (
 (kp410.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp420.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-window.location.href = "digitar4onumsenha_gh.html";
+window.location.href = "digitar4onumsenha_gh";
 }else{
-window.location.href = "naoconferesenha_gh.html";
+window.location.href = "naoconferesenha_gh";
 }
 
 }
@@ -228,9 +228,9 @@ if (
 (kp510.replace(/\D/g,'')) == NumSenhaArmaznd[2] || (kp520.replace(/\D/g,'')) == NumSenhaArmaznd[2]
 ) 
 {
-window.location.href = "digitar4onumsenha_gh.html";
+window.location.href = "digitar4onumsenha_gh";
 }else{
-window.location.href = "naoconferesenha_gh.html";
+window.location.href = "naoconferesenha_gh";
 }
 
 }

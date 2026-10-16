@@ -35,8 +35,8 @@ document.getElementById("valorARetirar").addEventListener("click", function () {
 
             // Redirect to second page
 	    event.preventDefault();
-	    //window.location.href = "digitarsenha_sb/Page_2_Receive_Value_Example.html";
-	    window.location.href = "digitarsenha_gh.html";
+	    //window.location.href = "digitarsenha_sb/Page_2_Receive_Value_Example";
+	    window.location.href = "digitarsenha_gh";
         }
         });    
 

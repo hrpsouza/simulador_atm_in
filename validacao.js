@@ -117,7 +117,7 @@ window.location.href = "https://hrpsouza.github.io/simulador_atm_in/";
 function followPage(){
 // Goes to the next page
 setTimeout(() => {
-window.location.href = "retiradacomcartaoinicial_gh.html";
+window.location.href = "retiradacomcartaoinicial_gh";
 //location.reload ();
 }, 5000); // 5 seconds delay
 }
